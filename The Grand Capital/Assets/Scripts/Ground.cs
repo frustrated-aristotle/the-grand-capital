@@ -8,6 +8,19 @@ public class Ground : MonoBehaviour
 
 	public bool isPlaced = false;
 
+	public bool forImprovement;
+	
+
+	public bool forFarm;
+	public bool forFishingPort;
+	public bool forMine;
+	public bool forLumberMill;
+
+	//You can place your factory wherever you want. 
+	public bool forFactory;
+	public bool forSeaFactory;
+	public bool forScience;
+
 	public Renderer rend;
 	Color groundBaseColor;
 	void Start()
@@ -27,9 +40,13 @@ public class Ground : MonoBehaviour
 	}
 	public void OnMouseDown()
 	{
-		if (isPlaced==false)
+		//If there is no 
+		if (!isPlaced && forImprovement)
 		{
 			isPlaced = true;
+			//Is this place suitable for Improvement?
+			
+			//Then Build the Improvement right here:
 			BuildImprovement();
 		}
 	}
