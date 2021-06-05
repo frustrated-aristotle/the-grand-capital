@@ -108,12 +108,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   improvementGameObject: {fileID: 2043975767412151914, guid: 5bf8b8ea4ddca51439d48f75f97c79fa,
     type: 3}
+  factoryGameObject: {fileID: 6109411512954082215, guid: 5de6326061ce14540b94e5f991f09e30,
+    type: 3}
   isPlaced: 0
   forImprovement: 1
   forFarm: 0
   forFishingPort: 0
   forMine: 0
-  forSawingYard: 0
+  forLumberMill: 0
   forFactory: 0
   forSeaFactory: 0
   forScience: 0

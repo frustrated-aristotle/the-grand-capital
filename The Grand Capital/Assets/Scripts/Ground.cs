@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ground : MonoBehaviour
 {
 	public GameObject improvementGameObject;
+	public GameObject factoryGameObject;
 
 	public bool isPlaced = false;
 
@@ -45,14 +46,21 @@ public class Ground : MonoBehaviour
 		{
 			isPlaced = true;
 			//Is this place suitable for Improvement?
-			
+
 			//Then Build the Improvement right here:
-			BuildImprovement();
+			//BuildImprovement();
+
+			//Theb Build the Factory1 right here:
+			BuildFactory();
 		}
 	}
 
 	public void BuildImprovement()
 	{
 		Instantiate(improvementGameObject, this.gameObject.transform.position, Quaternion.identity);
+	}
+	public void BuildFactory()
+	{
+		Instantiate(factoryGameObject, this.gameObject.transform.position, Quaternion.identity);
 	}
 }

@@ -15,8 +15,6 @@ public class Improvement : MonoBehaviour
     {
         InvokeRepeating("MakeRawMaterial", 0f, makingRate);
         player = GameObject.Find("Player");
-
-        
     }
 
     public void MakeRawMaterial()

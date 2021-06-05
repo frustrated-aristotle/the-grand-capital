@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 721142434010826537}
   - component: {fileID: 3114818555269895055}
   m_Layer: 0
-  m_Name: Improvement See
+  m_Name: Improvement Fishing Port
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d7d84e78dc6d5640b40e08c2d11daaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 7842943262087290579, guid: f2fd5f4ada83c784bba861dba0f14ba9, type: 3}
   whatKindOfImprovement: 0
   makingRate: 2
   certainLevel: 0
+  makingAmount: 5

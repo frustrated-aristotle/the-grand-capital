@@ -106,3 +106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea4f7216c93835f4e9cc9bce156df351, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  whatKindOfFactory: 1
+  makingRate: 2
+  spendingRate: 2
+  certainLevel: 0
+  makingAmount: 5
