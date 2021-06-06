@@ -6,6 +6,7 @@ public class PlayerResources : MonoBehaviour
 {
 	[Header("Player's Things")]
 	public float playerMoney;
+	public float playerScience;
 
 	[Header("Player's Raw Materials")]
 	public float playerFruit;
