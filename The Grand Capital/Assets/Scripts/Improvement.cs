@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Improvement : MonoBehaviour
 {
     GameObject player;
     [SerializeField] int whatKindOfImprovement;
     public float makingRate=2f;
+
+    public GameObject field;
 
     public int certainLevel = 0;
     public float makingAmount=5;
@@ -17,6 +19,16 @@ public class Improvement : MonoBehaviour
         player = GameObject.Find("Player");
     }
 
+    //If player wants to increse his worker amount, this will help him or her
+    public void IncreaseWorkerAmount()
+	{
+
+	}
+
+    public void DecreaseWorkerAmount()
+    {
+
+    }
     public void MakeRawMaterial()
 	{
         switch (whatKindOfImprovement)

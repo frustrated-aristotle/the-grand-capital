@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerResources : MonoBehaviour
 {
 	[Header("Player's Things")]
+	public float playerWorker;
 	public float playerMoney;
 	public float playerScience;
 

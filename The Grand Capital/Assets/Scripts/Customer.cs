@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Customer : GlobalMarket
 {
+	public GameObject panel;
 	protected override void A()
 	{
 
