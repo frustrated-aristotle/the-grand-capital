@@ -45,7 +45,7 @@ public class GlobalMarket : MonoBehaviour
 				Debug.Log("nothing");
 				break;
 			case 2:
-
+				Debug.Log("msdnfj");
 				break;
 			case 3:
 

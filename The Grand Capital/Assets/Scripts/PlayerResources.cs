@@ -21,6 +21,7 @@ public class PlayerResources : MonoBehaviour
 	public float playerProcessedLumber;
 	public float playerProcessedFish;
 
+	public Salers saler;
 	//[Header("Player's Products")]
 	//[Header("Player's Processed Products")]
 
