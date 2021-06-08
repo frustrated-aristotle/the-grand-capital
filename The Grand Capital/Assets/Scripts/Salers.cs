@@ -21,6 +21,11 @@ public class Salers : ScriptableObject
 	public class NewThings : GlobalMarket
 	{
 		Salers saler = new Salers();
+		
+		void Start()
+		{
+			Debug.Log("stj");
+		}
 		protected override void MarketPanelProperties(int sth)
 		{
 			base.MarketPanelProperties(saler.whatKindOfSaler);
