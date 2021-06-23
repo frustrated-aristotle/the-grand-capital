@@ -5,6 +5,8 @@ using UnityEngine.UI;
 public class Improvement : MonoBehaviour
 {
     GameObject player;
+
+    public GameObject[] workers;
     [SerializeField] int whatKindOfImprovement;
     public float makingRate=2f;
 

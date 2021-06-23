@@ -24,7 +24,12 @@ public class PlayerResources : MonoBehaviour
 	public Salers saler;
 	//[Header("Player's Products")]
 	//[Header("Player's Processed Products")]
+	public GameObject[] workers;
 
+	void Start()
+	{
+		
+	}
 
 
 

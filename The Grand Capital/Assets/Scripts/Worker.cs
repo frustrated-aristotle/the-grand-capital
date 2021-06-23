@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Worker : MonoBehaviour
 {
+    public GameObject s;
+    public GameObject whichBuilding;
+    //Name	Exp	Tlt		Qua	Tired	Relax	Shelter	Bos	angr But we already have them. 
+
     [Header("Production")]
     [SerializeField] float workerExprience;
     [SerializeField] float workerTalent;
@@ -21,5 +25,16 @@ public class Worker : MonoBehaviour
 
     [Header("Worker Personal Properties")]
     [SerializeField] string workerName;
+    public GameObject workersParent;
 
+	void Start()
+	{
+        
+	}
+
+    public void AssignWorkerForThatBuilding()
+	{
+        this.transform.SetParent(this.transform.parent.gameObject.GetComponent<SelectWorkerMenu>().mainParent.transform);
+        Debug.Log("dsfa");
+    }
 }

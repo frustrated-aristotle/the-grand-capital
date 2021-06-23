@@ -107,7 +107,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d7d84e78dc6d5640b40e08c2d11daaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 7842943262087290579, guid: f2fd5f4ada83c784bba861dba0f14ba9, type: 3}
+  workers: []
   whatKindOfImprovement: 0
   makingRate: 2
+  field: {fileID: 0}
   certainLevel: 0
+  makingAmount: 5
