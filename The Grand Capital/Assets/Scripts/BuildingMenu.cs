@@ -31,7 +31,12 @@ public class BuildingMenu : MonoBehaviour
 	}
 	void OnMouseEnter()
 	{
+		//we have to make that job inside those panels scripts. 
+		//When mouse enter the improvement's collision
+		//We have to display menu and its components such as image and button. 
 		buildingMainMenu.SetActive(true);
+		buildingMainMenu.GetComponent<Image>().enabled = true;
+		workerButton.SetActive(true);
 	}
 
     void OnMouseExit()

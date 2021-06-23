@@ -19,5 +19,7 @@ public class Worker : MonoBehaviour
     [Header("Worker Angry")]
     [SerializeField] float workerAngry;
 
+    [Header("Worker Personal Properties")]
+    [SerializeField] string workerName;
 
 }

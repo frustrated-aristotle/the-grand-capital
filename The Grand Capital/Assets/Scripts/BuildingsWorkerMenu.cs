@@ -12,6 +12,7 @@ public class BuildingsWorkerMenu : MonoBehaviour
 	
 	public void ShowBuildingsWorkers()
 	{
+		/*
 		//When player click the "Workers" button, game display The Building's Workers Menu:
 		buildingWorkerMenu.SetActive(true);
 
@@ -19,6 +20,7 @@ public class BuildingsWorkerMenu : MonoBehaviour
 		buildingMainMenu.GetComponent<Image>().enabled = false;
 		//Then we have to completely deactive The Button that we clicked to make all of those activities.
 		workerButton.SetActive(false);
+		*/
 	}
 	
 }
