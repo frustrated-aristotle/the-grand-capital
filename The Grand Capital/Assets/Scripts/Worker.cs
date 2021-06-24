@@ -34,7 +34,8 @@ public class Worker : MonoBehaviour
 
     public void AssignWorkerForThatBuilding()
 	{
-        this.transform.SetParent(this.transform.parent.gameObject.GetComponent<SelectWorkerMenu>().mainParent.transform);
-        Debug.Log("dsfa");
+        //  this.transform.SetParent(this.transform.parent.gameObject.GetComponent<SelectWorkerMenu>().mainParent.transform);
+        workersParent = this.transform.parent.GetComponent<SelectWorkerMenu>().mainParent;
+        this.transform.SetParent(workersParent.transform);
     }
 }
