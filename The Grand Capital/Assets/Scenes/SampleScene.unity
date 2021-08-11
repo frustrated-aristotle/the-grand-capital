@@ -485,14 +485,19 @@ MonoBehaviour:
   workerExprience: 0
   workerTalent: 0
   workerQualification: 0
+  workerPerformance: 0
+  workerSuitability: 0
+  workerTalentPoint: 0
   workerHappinnes: 0
-  workerTiredness: 0
   workerSheltering: 0
-  workerRelaxing: 0
-  workerBoss: 0
+  workerResting: 0
+  workerAffection: 0
+  workerOpinion: 0
   workerAngry: 0
   workerName: 
   workersParent: {fileID: 0}
+  workplace: {fileID: 0}
+  isWorking: 0
 --- !u!114 &336296498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3441,14 +3446,19 @@ MonoBehaviour:
   workerExprience: 0
   workerTalent: 0
   workerQualification: 0
+  workerPerformance: 0
+  workerSuitability: 0
+  workerTalentPoint: 0
   workerHappinnes: 0
-  workerTiredness: 0
   workerSheltering: 0
-  workerRelaxing: 0
-  workerBoss: 0
+  workerResting: 0
+  workerAffection: 0
+  workerOpinion: 0
   workerAngry: 0
   workerName: 
   workersParent: {fileID: 0}
+  workplace: {fileID: 0}
+  isWorking: 0
 --- !u!114 &1795716542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4129,12 +4139,12 @@ PrefabInstance:
         type: 3}
       propertyPath: workers.Array.data[0]
       value: 
-      objectReference: {fileID: 336296495}
+      objectReference: {fileID: 1795716537}
     - target: {fileID: 7842943262087290576, guid: f2fd5f4ada83c784bba861dba0f14ba9,
         type: 3}
       propertyPath: workers.Array.data[1]
       value: 
-      objectReference: {fileID: 1795716537}
+      objectReference: {fileID: 336296495}
     - target: {fileID: 7842943262087290577, guid: f2fd5f4ada83c784bba861dba0f14ba9,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -8,6 +8,7 @@ public class BuildingMenu : MonoBehaviour
 	GameObject player;
 	public GameObject mainParent;
 	public GameObject whichPlayer;
+	GameObject reassingWorkersParent;
 	
 	[SerializeField] float border;
 	
@@ -34,7 +35,9 @@ public class BuildingMenu : MonoBehaviour
 	{
 		player = GameObject.Find("Player");	
 		Vector3 menuPos = Camera.main.WorldToScreenPoint(this.transform.position);
-		
+
+		reassingWorkersParent = GameObject.Find("Workers");
+
 		buildingMainMenu.transform.position = menuPos;
 	}
 	public void ShowBuildingsWorkers()
@@ -59,16 +62,43 @@ public class BuildingMenu : MonoBehaviour
 		//Then we have to completely deactive The Button that we clicked to make all of those activities.
 		sellectWorkerButton.SetActive(false);
 
+		//We have to display player's worker that exists.
+		
+		for (int i = 0; i < player.GetComponent<PlayerResources>().workers.Length; i++)
+		{
+			//We can use if statement here if we have to not display all of the workers whether they are working or not.
 
+			if (!player.GetComponent<PlayerResources>().workers[i].GetComponent<Worker>().isWorking)
+			{
+			/*We are setting a parent to each workers that exist. The parent is building's worker sellection menu
+			 *Because actually we have to display properties of workers in the sellection menu.
+			 *We have text component to text properties of it. 
+			 */
+				Debug.Log("sssss"+player.GetComponent<PlayerResources>().workers.Length);
+				player.GetComponent<PlayerResources>().workers[i].transform.SetParent(buildingSellectWorkerMenu.transform);
+				player.GetComponent<PlayerResources>().workers[i].SetActive(true);
+			//We setted up the parent to our worker for just displaying them. When we clicked on them, we have to make reset it as it has to. 
+			}
+			
+			
+		}
+
+		//I'm not sure what it is.
+		{ 
+		/*
 		player.GetComponent<PlayerResources>().workers[0].SetActive(true);
 		player.GetComponent<PlayerResources>().workers[1].SetActive(true);
+
 		player.GetComponent<PlayerResources>().workers[0].GetComponent<Worker>().workersParent = mainParent;
 		player.GetComponent<PlayerResources>().workers[1].GetComponent<Worker>().workersParent = mainParent;
+		//mainParent.GetComponent<Improvement>().workers[0] = player.GetComponent<PlayerResources>().workers[0];
+		//mainParent.GetComponent<Improvement>().workers[1] = player.GetComponent<PlayerResources>().workers[1];
 
 
 		player.GetComponent<PlayerResources>().workers[0].transform.SetParent(buildingSellectWorkerMenu.transform);		
 		player.GetComponent<PlayerResources>().workers[1].transform.SetParent(buildingSellectWorkerMenu.transform);
 		whichPlayer = this.gameObject;
+		*/}
 	}
 	void OnMouseEnter()
 	{
@@ -88,6 +118,18 @@ public class BuildingMenu : MonoBehaviour
 		buildingWorkerMenu.SetActive(false);
 		buildingSellectWorkerMenu.SetActive(false);
 		whichPlayer = null;
+
+		//We can not store our player's workers in specified menu, thus we have to reassign their parents as what it was.
+		//We can use similar "for" codes.
+		for (int i = 0; i < player.GetComponent<PlayerResources>().workers.Length; i++)
+		{
+			//We have to control whether the worker is working or not:
+			if (!player.GetComponent<PlayerResources>().workers[i].GetComponent<Worker>().isWorking)
+			{
+				player.GetComponent<PlayerResources>().workers[i].transform.SetParent(reassingWorkersParent.transform);
+				player.GetComponent<PlayerResources>().workers[i].SetActive(false);
+			}
+		}
 	}
 
 }

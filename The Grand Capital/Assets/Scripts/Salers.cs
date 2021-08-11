@@ -14,7 +14,7 @@ public class Salers : ScriptableObject
 	[SerializeField] float theCompencation;
 	public GameObject panel;
 
-	NewThings nt = new NewThings();
+	//NewThings nt = new NewThings();
 	
 	
 

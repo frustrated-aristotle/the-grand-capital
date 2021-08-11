@@ -111,10 +111,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   workers: []
   whatKindOfImprovement: 0
-  makingRate: 2
   field: {fileID: 0}
+  gatheringAmountOfWorkers: 0
+  totalGatheringAmount: 0
   certainLevel: 0
-  makingAmount: 5
+  reqMerit: 0
 --- !u!114 &4453398568110409774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,6 +130,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainParent: {fileID: 2043975767412151914}
   whichPlayer: {fileID: 0}
+  reassingWorkersParent: {fileID: 8943848368726150783, guid: 3d6b332c2a6263f48bc5d3606fad7902,
+    type: 3}
   border: 0
   buildingMainMenu: {fileID: 8160116967420114638}
   buildingWorkerMenu: {fileID: 8160116967840564129}
